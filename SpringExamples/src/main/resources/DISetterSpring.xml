@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="R" class="org.example.pojo.Rectangle" scope="prototype">
+        <property name="length" value="10"/>
+        <property name="breadth" value="5"/>
+    </bean>
+
+    <bean id="RC" class="org.example.pojo.Rectangle">
+        <constructor-arg value="100"></constructor-arg>
+        <constructor-arg value="50"></constructor-arg>
+    </bean>
+</beans>
+
