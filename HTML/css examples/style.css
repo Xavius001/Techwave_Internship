@@ -1,0 +1,51 @@
+.test {
+		color:red;
+		font-family:Vladimir Script;
+		font-size:48px;
+	}
+	#test1 {
+		color:blue;
+		font-family:Vladimir Script;
+		font-size:48px;
+	}
+		h1 {
+			color:red;
+			font-family:Vladimir Script
+		}
+		
+		h2 {
+			color:Green;
+			font-family:Monotype Corsiva
+		}
+		
+		table{
+			border:2px solid #0000FF;
+		}
+		th {
+			border:2px solid #00FF00;
+		}
+		td {
+			border:2px solid #FF0000;
+		}
+		th, td {
+			padding:10px;
+		}
+		ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
