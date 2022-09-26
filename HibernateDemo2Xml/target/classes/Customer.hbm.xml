@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.example.pojo.Customer" table="custxml">
+        <id name ="customerId">
+            <generator class="assigned"></generator>
+        </id>
+        <property name="customerName" length="25" not-null="true"/>
+        <property name="dob" not-null="false"/>
+        <property name="mobile" not-null="false"/>
+        <many-to-one name="addressId" class="org.example.pojo.Address" unique="true"/>
+    </class>
+
+</hibernate-mapping>

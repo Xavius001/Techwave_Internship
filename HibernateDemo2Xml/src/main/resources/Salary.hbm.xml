@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.example.pojo.Salary" table="salxml">
+        <id name ="empno">
+            <generator class="assigned"></generator>
+        </id>
+        <one-to-one name="empno" class="org.example.pojo.Employee" constrained="true"/>
+        <property name="basic" not-null="true"/>
+    </class>
+
+</hibernate-mapping>

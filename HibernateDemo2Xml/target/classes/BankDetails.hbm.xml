@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.example.pojo.BankDetails" table="bankxml">
+        <id name ="customerId">
+            <generator class="foreign">
+                <param name="property"></param>
+            </generator>
+        </id>
+        <property name="accountNo" length="15"/>
+        <property name="bankName" length="15"/>
+        <one-to-one name="customer" class="org.example.pojo.Customer" constrained="true"/>
+
+    </class>
+
+</hibernate-mapping>
