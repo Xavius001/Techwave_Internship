@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="myscript.js"></script>
+</head>
+<body>
+    <form action="first.html">
+        <table>
+            <tr>
+                <td>Empno</td>
+                <td><input type ="text" name="empno"></td>
+            </tr>
+            <tr>
+                <td>Employee Name</td>
+                <td><input type ="text" name="ename"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type ="radio" name="gender" value="Male">Male
+                    <input type ="radio" name="gender" value="Female">Female
+                    <input type ="radio" name="gender" value="Trans">Trans
+                </td>
+            </tr>
+            <tr>
+                <td>Skills</td>
+                <td>
+                    <input type="checkbox" name="Skills" value="Java">Java
+                    <input type="checkbox" name="Skills" value="Angular">Angular
+                    <input type="checkbox" name="Skills" value="Database">Database
+                </td>
+            </tr>
+            <tr>
+                <td>Do you need transportation</td>
+                <td>
+                    <select name="transport" >
+                        <option> Select</option>
+                        <option> Yes</option>
+                        <option> No</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Dob</td>
+            </tr>
+        </table>
+        <input type="submit" onclick="return Func1();">
+    </form>
+
+</body>
+</html>
